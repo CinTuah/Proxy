@@ -286,7 +286,7 @@ function take()
                 sendPacketRaw(false, { type=11, value=obj.id, x=obj.posX, y=obj.posY })
                 table.insert(data, { id=obj.itemid, count=obj.amount })
                 -- Debug: log setiap item yang ditemukan
-                LogToConsole("`9Found item id:"..obj.itemid.." amount:"..obj.amount.." at "..obj.posX//32..","..obj.posY//32)
+                LogToConsole("`9Found item id:"..obj.itemid.." amount:"..obj.amount.." at "..obj.posX//32..","..obj.posY/32)
                 found = found + 1
             end
         end
